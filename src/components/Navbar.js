@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo2.png";
+import Tilt from "react-parallax-tilt";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -36,12 +37,14 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
+      style={expand ? { backdropFilter:'blur(15px)' , borderRadius: '0px 0px 100px 100px'} : {}}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" />
-           */}
-           🤖
+        <Tilt>
+          <img src={logo} className="img-fluid logo" alt="brand" />
+          </Tilt>
+           {/* 🤖 */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -71,7 +74,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -84,7 +87,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+           {/*  <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"

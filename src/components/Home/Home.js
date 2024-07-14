@@ -6,10 +6,11 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../Assets/../Assets/Yash Vyas Resume.pdf";
+import Tilt from "react-parallax-tilt";
 
 function Home() {
   return (
-    <section>
+    <section className="main-Home">
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -30,27 +31,30 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-              <div style={{ padding:'0px 50px', textAlign: "left" }}>
-              <Button
-                variant="primary"
-                href={pdf}
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >
-                <AiOutlineDownload />
-                &nbsp;Download CV
-              </Button>
+              <div style={{ padding: "0px 50px", textAlign: "left" ,margin:'20px 0px' }}>
+                <Tilt>
+                  <Button
+                    variant="primary"
+                    href={pdf}
+                    target="_blank"
+                    style={{ maxWidth: "250px" }}
+                  >
+                    <AiOutlineDownload />
+                    &nbsp;Download CV
+                  </Button>
+                </Tilt>
               </div>
-             
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
+              {/* <Tilt> */}
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid main-home-pic"
                 style={{ maxHeight: "450px" }}
               />
+              {/* </Tilt> */}
             </Col>
           </Row>
         </Container>

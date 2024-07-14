@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import otc from "../../Assets/Projects/otc.png";
+// import emotion from "../../Assets/Projects/emotion.png";
+import llmadmin from "../../Assets/Projects/ADMINzla.png";
+import LLA from "../../Assets/Projects/Language learning app.png";
+// import suicide from "../../Assets/Projects/SSM.png";
+import SURGICAL from "../../Assets/Projects/SSM.png";
 
 function Projects() {
   return (
@@ -20,54 +20,54 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>\
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={LLA}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Language Learning App"
+              description="Zoundslike is an innovative Language learning app developed by me, leveraging a full-stack development approach. Available on web, Android, and iOS platforms through Cordova, it offers customizing your learning with diverse topics and adjustable difficulty levels. Choose from solo or multiplayer modes. Integrated PusherJS, Twilio, Amazon Incentive APIs, and Gemini API etc. The frontend is built using Nuxt and Vue, while the backend is developed with Node.js, Express, and MongoDB."
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={SURGICAL}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Surgical Scheduling Management Software"
+              description="It is a surgical CALENDAR, integrates surgeons’, vendors’, and facility schedules. Establishing seamless integration channels with EMR systems for patient data retrieval and management. Developed in ReactJs, NodeJs and Dynamodb. also integrated google calendar in it."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={otc}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="NFC cards management system"
+              description="The NFC management system offers a seamless digital business card solution with NFC
+              technology, enabling users to share contact details and links with a single tap. It features
+              three plans: Free, Professional, and Team. The Team plan includes centralized employee
+              card management, role assignments, and customizable access permissions, streamlining
+              digital networking and team coordination for businesses.also worked on custom percentage and custom amount discount functionality for buying plans and related addons."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={llmadmin}
+              isBlog={false}
+              title="Admin Panel of Language Learning App"
+              description="This Admin Panel is a users and games management tool developed in React.js with a Node.js and Express backend, and MongoDB database. Utilizing Redux, it efficiently manages all categories and words, tracks performance of  all players(users) , and oversees all app functionalities, ensuring a seamless and secure user experience."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
+              // imgPath={suicide}
               isBlog={false}
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
@@ -78,15 +78,15 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              // imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

@@ -26,6 +26,8 @@ import {
   SiGooglecalendar,
   SiAmazondynamodb,
   SiRedux,
+  SiCapacitor,
+  SiApachecordova,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -68,9 +70,12 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiTwilio />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiGooglecalendar />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCapacitor />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachecordova />
+      </Col>
     </Row>
   );
 }
