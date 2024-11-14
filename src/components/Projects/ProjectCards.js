@@ -11,7 +11,7 @@ function ProjectCards(props) {
       <Card.Body>
         <Card.Title className="purple">{props.title}</Card.Title>
         {/* <h6 >Key Features Developed by Me</h6> */}
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text style={{ textAlign: "left" }}>
           {props.description}
         </Card.Text>
         {/* <Button variant="primary" href={props.ghLink} target="_blank">
