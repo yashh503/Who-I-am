@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../Assets/../Assets/Yash Vyas Resume.pdf";
+import pdf from "../../Assets/../Assets/Resume_FSD.pdf";
 import Tilt from "react-parallax-tilt";
 
 function Home() {
